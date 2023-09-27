@@ -13,21 +13,21 @@
         padding: 0;
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
     }
    body{
         
         background-color: rgba(179, 179, 179, 0.2);
     }
    
-    .main{
-        width: 100%;
-        height: auto;  
-    }
-   
     
+   
+  .div-form{
+    margin: 85px auto;
+    
+  }
   .formulario{
-    margin: 80px auto;
-    width: 600px;
+
     height: auto;
     
   }
@@ -36,24 +36,20 @@
     font-weight: bold;
   }
   .iconos-header{
-    color: aliceblue;
+    color:#fff;
   }
   i{
     
     padding: 5px;
   }
-  .container-botones{
-    position: relative;
-    left: 365px;
-  }
-   
+ 
 </style>
 </head>
 <body>
 
-    <!– barra de navegacion del header –>
+    <!- barra de navegacion del header ->
 
-<header class="header   ">
+<header>
     <nav class="navbar fixed-top bg-primary navbar-expand-md ">
         <div class="container-fluid mx-5">
           <a class="navbar-brand " href="#">PropHoriz</a>
@@ -77,9 +73,10 @@
       </nav>
 </header>
 
-<! Formulario del propietario –>
+<! Formulario del propietario ->
 
-<main class="main">
+<main>
+  <div class="div-form col-md-6">
     <form class="row g-3 formulario shadow p-3  bg-body-tertiary rounded"">
         <p>RESERVACIÓN ZONAS SOCIALES</p>
         <div class="col-md-6">
@@ -120,17 +117,17 @@
             <label for="validationDefault07" class="form-label">Valor</label>
             <input type="number" class="form-control" id="validationDefault07" required>
           </div>
-        <div class="col-12 container-botones">
+        <div class="col-12">
           <button class="btn btn-outline-primary" type="submit">Reservar</button>
           <button class="btn btn-outline-danger" type="reset">Cancelar</button>
         </div>
 
-        <!– Tabla de datos del propietario –>
+        <!-Tabla de datos del propietario ->
 
         <div class="table-responsive">
             <p>LISTADO DE RESERVAS</p>
         <table class="table text-center table-hover table-borderless">
-          <thead class="table-ligth">
+          <thead class="table-primary">
             <tr>
               <th scope="col">ID</th>
               <th scope="col">APARTAMENTO</th>
@@ -159,12 +156,11 @@
             </tr>
         </table>
     </div>
-
       </form>
-
+    </div>
 </main>
 
-<!– Barra de navegación del footer –>
+<!- Barra de navegación del footer ->
 
 <footer class="footer">
     <nav class="navbar navbar-expand-md fixed-bottom bg-primary dropup">
