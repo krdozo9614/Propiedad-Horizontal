@@ -21,16 +21,18 @@
     }
    
     .main{
-        width: 100%;
+        
         height: auto;  
     }
    
     
-  .formulario{
-    margin: 70px auto;
-    width: 600px;
-    height: auto;
+  .div-form{
+    margin: 80px auto;
     
+  }
+
+  .formulario{
+    height: auto;
   }
   p{
     text-align: center;
@@ -43,13 +45,8 @@
     
     padding: 5px;
   }
-  .container-botones{
-    position: relative;
-    left: 370px;
-  }
-  th{
-    background-color: rgb(20, 236, 0);
-  }
+ 
+ 
 </style>
 </head>
 <body>
@@ -83,6 +80,7 @@
 <! Formulario del propietario –>
 
 <main class="main">
+  <div class="div-form col-md-6 ">
     <form class="row g-3 formulario shadow p-3  bg-body-tertiary rounded"">
         <p>INGRESE INFORMACIÓN DEL PROPIETARIO</p>
         <div class="col-md-6">
@@ -150,8 +148,8 @@
 
         <div class="table-responsive">
             <p>PROPIETARIO</p>
-        <table class="table text-center table-hover table-borderless">
-          <thead class="">
+        <table class="table text-center table-hover ">
+          <thead class="table-primary">
             <tr>
               <th scope="col">ID</th>
               <th scope="col">APARTAMENTO</th>
@@ -164,6 +162,8 @@
               <th scope="col">TELEFONO</th>
               <th scope="col">CORREO</th>
               <th scope="col">INQUILINO</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>
@@ -185,7 +185,7 @@
         </table>
         </div>
       </form>
-
+    </div>
 </main>
 
 <!– Barra de navegación del footer –>
