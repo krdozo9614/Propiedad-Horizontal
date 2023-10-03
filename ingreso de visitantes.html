@@ -182,37 +182,102 @@
 <!- Formulario del propietario ->
 
 <main>
- 
-  <div class="row g-3 wrapper div-form col-md-6 formulario  ">
-    <p class="titulo col-md-6"> Bienvenidos al sitema de gestion PropHoriz </p>
-    <div>
-      <a  href="ingresar apartamento.html" class="d-grid col-md-5  mx-auto nav-link " > <button class="btn boton1 boton uno" type="button"> Ingresar propietario <i class="bi bi-person-plus iconos"></i></button> </a>
-      
-    </div>
-    <div>
-      <a href="Buscar apartamento.html" class="d-grid col-md-5  mx-auto nav-link " > <button class="btn boton2" type="button">Buscar propietario <i class="bi bi-search iconos"></i></button> </a>
-      
-    </div>
-    <div>
-      <a href="generar multas.html" class=" nav-link d-grid col-md-5 mx-auto  " > <button class="btn boton3" type="button">Generar multas <i class="bi bi-exclamation-octagon iconos"></i></button> </a>
-      
-    </div>
-
-    <div>
-      <a href="reservacion zonas.html" class="nav-link d-grid col-md-5 mx-auto " >  <button class="btn boton4" type="button">  Reservar zona social <i class="bi bi-calendar-week iconos"></i></button> </a>
-      
-    </div>
-    <div>
-      <a href="subir documentacion.html" class=" nav-link d-grid col-md-5 mx-auto " > <button class="btn  boton5" type="button"> Ingresar documentación <i class="bi bi-book-half iconos"></i></button> </a>
-      
-    </div>
-      <div>
-      <a href="historial de pagos.html" class="d-grid col-md-5 mx-auto nav-link " > <button class="btn boton6" type="button">Historial de pagos <i class="bi bi-check2-circle iconos"></i></button> </a>
-      
-    </div>
+    <div class="div-form col-md-6">
+        <form class="row g-3 formulario shadow p-3  bg-body-tertiary rounded"">
+            <p>INGRESO DE VISITANTES</p>
+            <div class="col-md-6">
+              <label for="validationDefault01" class="form-label">N° de apartamento</label>
+              <input type="number" class="form-control" id="validationDefault01"  required>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault02" class="form-label">Torre, bloque o interior</label>
+              <input type="text" class="form-control" id="validationDefault02"  required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="validationDefault04" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault05" class="form-label">Cedula</label>
+                <input type="number" class="form-control" id="validationDefault05" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault06" class="form-label">Fecha</label>
+                <input type="date" class="form-control" id="validationDefault06" required>
+              </div>
+             
+              <div class="col-md-6">
+                <label for="validationDefault07" class="form-label">Tipo</label>
+                <select class="form-select" id="validationDefault07" required>
+                  <option>---Seleccionar---</option>
+                  <option>Transportadora</option>
+                  <option>Familiares</option>
+                  <option>Entidades</option>
+                  <option>Otros</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault08" class="form-label">NOMBRE</label>
+                <input type="text" class="form-control" id="validationDefault08" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault09" class="form-label">Hora</label>
+                <input type="time" class="form-control" id="validationDefault09" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault10" class="form-label">Novedad</label>
+                <input type="number" class="form-control" id="validationDefault10" required>
+              </div>
+           
+            
+            <div class="col-12 container-botones">
+              <button class="btn btn-outline-primary" type="submit">Guardar</button>
+              <button class="btn btn-outline-danger"" type="reset">Cancelar</button>
+            </div>
     
-   
-</div>
+    <!- Tabla de datos del propietario ->
+    
+            <div class="table-responsive">
+                <p>DATOS DEL VISITANTE</p>
+            <table class="table text-center table-hover ">
+              <thead class="table-primary">
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col">APARTAMENTO</th>
+                  <th scope="col">TORRE</th>
+                  <th scope="col">NOMBRES</th>
+                  <th scope="col">APELLEDIOS</th>
+                  <th scope="col">FECHA</th>
+                  <th scope="col">TIPO</th>
+                  <th scope="col">NOMBRE</th>
+                  <th scope="col">HORA</th>
+                  <th scope="col">NOVEDAD</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td scope="col"> <button class="btn btn-outline-danger" type="reset"> <a class="dropdown-item" href=""> <i class="bi bi-person-x"></i>Eliminar</a></button></td>
+                </tr>
+            </table>
+            </div>
+          </form>
+        </div>
+  
 
 </main>
 

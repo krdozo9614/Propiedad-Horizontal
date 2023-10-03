@@ -37,7 +37,24 @@
     color:#fff;
     padding: 5px;
   }
- 
+  .barra{
+  background-color: #189bec;
+ }
+ .ul-barra:hover{
+  background: transparent;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        border-radius: 10px;
+        
+        
+ }
+ .titulo-prophoriz:hover{
+  background: transparent;
+        color: #ffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+        border-radius: 10px;
+        padding: 5px;
+        
+ }
 </style>
 </head>
 <body>
@@ -45,22 +62,22 @@
     <!- barra de navegacion del header ->
 
 <header>
-    <nav class="navbar fixed-top bg-primary navbar-expand-md ">
+    <nav class="navbar fixed-top barra navbar-expand-md ">
         <div class="container-fluid mx-5">
-          <a class="navbar-brand" href="#">PropHoriz</a>
+          <a class="navbar-brand titulo-prophoriz" href="index.html">PropHoriz</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"> <i class="bi bi-person-circle user"></i>  Usuario</a> 
+                <a class="nav-link active ul-barra" aria-current="page" href="login.html"> <i class="bi bi-person-circle user"></i>  Usuario</a> 
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#"> <i class="bi bi-bell"></i>  Notificación</a>
+                <a class="nav-link active ul-barra" href="#"> <i class="bi bi-bell"></i>  Notificación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#"> <i class="bi bi-question-circle"></i> Ayuda</a>
+                <a class="nav-link active ul-barra" href="#"> <i class="bi bi-question-circle"></i> Ayuda</a>
               </li>
             </ul>
           </div>
@@ -160,54 +177,64 @@
 <!- Barra de navegación del footer ->
 
 <footer class="footer">
-    <nav class="navbar navbar-expand-md fixed-bottom bg-primary dropup">
-        <div class="container-fluid mx-5 ">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  ADMINISTRACIÓN
-                </a>
-                <ul class="dropdown-menu text-center">
-                  <li><a class="dropdown-item" href="ingresar apartamento.html">Ingresar INF. del apartamento</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="Buscar apartamento.html">INF. del apartamento</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="generar multas.html">Generar multa</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="reservacion zonas.html">Reservar zona social</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="subir documentacion.html">Ingresar documentación</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="historial de pagos.html">Historial de pagos</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  PROPIETARIOS
-                </a>
-                <ul class="dropdown-menu text-center">
-                  <li><a class="dropdown-item" href="">INF. del apartamento</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Pagos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Derechos y deberes</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active">VIGILANTE</a>
-              </li>
+  <nav class="navbar navbar-expand-md fixed-bottom barra dropup"  >
+    <div class="container-fluid mx-5 ">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active ul-barra" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item dropdown ul-barra">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              ADMINISTRACIÓN
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="ingresar apartamento.html">Ingresar INF. del apartamento</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="Buscar apartamento.html">INF. del apartamento</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="generar multas.html">Generar multa</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="reservacion zonas.html">Reservar zona social</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="subir documentacion.html">Ingresar documentación</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="historial de pagos.html">Historial de pagos</a></li>
             </ul>
-           
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item dropdown ul-barra">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              PROPIETARIOS
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="">Generar mes actual</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Listado de propietarios en mora</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Listado de propietarios al dia</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Listado general</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ul-barra">
+            <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CONSERJE
+            </a>
+            <ul class="dropdown-menu text-center">
+              <li><a class="dropdown-item" href="ingreso de visitantes.html">Ingresos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="reservacion zonas.html">Reservar zona social</a></li>
+              <li><hr class="dropdown-divider"></li>
+            </ul>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
 </footer>
 
 

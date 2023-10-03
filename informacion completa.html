@@ -7,39 +7,36 @@
     <link rel="icon" href="IMG/ICONO CASA.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Reservaciones</title>
+    <title>Buscar</title>
 <style>
-   *{
+  *{
         padding: 0;
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
         box-sizing: border-box;
     }
-   body{
+    body{
         
         background-color: rgba(179, 179, 179, 0.2);
     }
-   
     
-   
-  .div-form{
-    margin: 85px auto;
+  .formulario{
+    height: auto;
     
   }
-  .formulario{
-
-    height: auto;
+  .div-form{
+    margin: 80px auto;
     
   }
   p{
     text-align: center;
     font-weight: bold;
   }
-  .iconos-header{
-    color:#fff;
+  .iconos-header
+  {
+    color: #fff;
   }
   i{
-    
     padding: 5px;
   }
   .barra{
@@ -49,7 +46,7 @@
   background: transparent;
         box-shadow: 0 0 10px rgba(0, 0, 0, .2);
         border-radius: 10px;
-       
+        
         
  }
  .titulo-prophoriz:hover{
@@ -57,20 +54,22 @@
         color: #ffff;
         box-shadow: 0 0 10px rgba(0, 0, 0, .2);
         border-radius: 10px;
-        padding: 10px;
+        padding: 5px;
         
  }
+ 
+   
 </style>
 </head>
 <body>
 
     <!- barra de navegacion del header ->
 
-<header>
+<header class="header   ">
     <nav class="navbar fixed-top barra navbar-expand-md ">
         <div class="container-fluid mx-5">
-          <a class="navbar-brand titulo-prophoriz " href="index.html">PropHoriz</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+          <a class="navbar-brand titulo-prophoriz" href="index.html">PropHoriz</a>
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -93,55 +92,91 @@
 <! Formulario del propietario ->
 
 <main>
-  <div class="div-form col-md-6">
-    <form class="row g-3 formulario shadow p-3  bg-body-tertiary rounded"">
-        <p>RESERVACIÓN ZONAS SOCIALES</p>
-        <div class="col-md-6">
-          <label for="validationDefault01" class="form-label">N° de apartamento</label>
-          <input type="number" class="form-control" id="validationDefault01"  required>
-        </div>
-        <div class="col-md-6">
-          <label for="validationDefault02" class="form-label">Torre, bloque o interior</label>
-          <input type="text" class="form-control" id="validationDefault02"  required>
-        </div>   
-        <div class="col-md-6">
-          <label for="validationDefault03" class="form-label">Tipo de zona</label>
-          <select class="form-select" id="validationDefault03" required>
-            <option>---Selccionar---</option>
-            <option>Salón comunal</option>
-            <option>Piscina</option>
-            <option>Gimnasio</option>
-            <option>Otros</option>
-          </select>
-        </div>
-        <div class="col-md-6">
-            <label for="validationDefault04" class="form-label">Tipo de evento</label>
-            <select class="form-select" id="validationDefault04" required>
-              <option>---Selccionar---</option>
-              <option>Privado</option>
-              <option>Uso de zona común</option>
-            </select>
-          </div>
-          <div class="col-md-4">
-            <label for="validationDefault05" class="form-label">Fecha</label>
-            <input type="date" class="form-control" id="validationDefault05" required>
-          </div>
-          <div class="col-md-4">
-            <label for="validationDefault06" class="form-label">Hora</label>
-            <input type="time" class="form-control" id="validationDefault06" required>
-          </div>
-          <div class="col-md-4">
-            <label for="validationDefault07" class="form-label">Valor</label>
-            <input type="number" class="form-control" id="validationDefault07" required>
-          </div>
-        <div class="col-12">
-          <button class="btn btn-outline-primary" type="submit">Reservar</button>
-          <button class="btn btn-outline-danger" type="reset">Cancelar</button>
-        </div>
+    <div class="div-form col-md-6">
+        <form class="row g-3 formulario shadow p-3  bg-body-tertiary rounded"">
+            <p>INFORMACIÓN DEL PROPIETARIO</p>
+            <div class="col-md-6">
+              <label for="validationDefault01" class="form-label">N° de apartamento</label>
+              <input type="number" class="form-control" id="validationDefault01"  required>
+            </div>
+            <div class="col-md-6">
+              <label for="validationDefault02" class="form-label">Torre, bloque o interior</label>
+              <input type="text" class="form-control" id="validationDefault02"  required>
+            </div>
+            <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault04" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="validationDefault04" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault05" class="form-label">Cedula</label>
+                <input type="number" class="form-control" id="validationDefault05" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault06" class="form-label">Fecha de naciminiento</label>
+                <input type="date" class="form-control" id="validationDefault06" required>
+              </div>
+              <div class="col-md-4">
+                <label for="validationDefault07" class="form-label">Fecha de expedición</label>
+                <input type="date" class="form-control" id="validationDefault07" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault08" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="validationDefault08" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault09" class="form-label">Celular</label>
+                <input type="number" class="form-control" id="validationDefault09" required>
+              </div>
+           
+          
+            <div class="col-md-6">
+              <label for="validationDefault10" class="form-label">Sexo</label>
+              <input type="tex" class="form-control" id="validationDefault10" required>
+            </div>
+          
+          
+           
+    
+        <!- Tabla de datos del inquilino ->
 
-        <!-Tabla de datos del propietario ->
-
-        <div class="table-responsive">
+    <div class="table-responsive">
+        <p>INQUILINOS</p>
+        <table class="table text-center table-hover table-borderless ">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">APARTAMENTO</th>
+                <th scope="col">TORRE</th>
+                <th scope="col">TIPO</th>
+                <th scope="col">NOMBRES</th>
+                <th scope="col">APELLEDIOS</th>
+                <th scope="col">FECHA DE NACIMIENTO</th>
+                <th scope="col">SEXO</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td scope="col"><button class="btn btn-outline-success" type="submit"> <a class="dropdown-item" href=""> <i class="bi bi-person-gear"></i>Modificar</a></button></td>
+              <td scope="col"> <button class="btn btn-outline-danger" type="reset"> <a class="dropdown-item" href=""> <i class="bi bi-person-x"></i>Eliminar</a></button></td>
+              </tr>
+          </table>
+          </div>
+          <!- Tabla de reservas ->
+          <div class="table-responsive">
             <p>LISTADO DE RESERVAS</p>
         <table class="table text-center table-hover table-borderless">
           <thead class="table-primary">
@@ -173,13 +208,47 @@
             </tr>
         </table>
     </div>
-      </form>
-    </div>
+    <div class="table-responsive">
+        <p>LISTADO DE MULTAS</p>
+    <table class="table text-center table-hover table-borderless">
+      <thead class="table-primary">
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">APARTAMENTO</th>
+          <th scope="col">TORRE</th>
+          <th scope="col">TIPO</th>
+          <th scope="col">EVIDENCIA</th>
+          <th scope="col">FECHA</th>
+          <th scope="col">DESCRIPCIÓN</th>
+          <th scope="col">VALOR</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row"></th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td scope="col"><button class="btn btn-outline-success" type="submit"> <a class="dropdown-item" href=""> <i class="bi bi-person-gear"></i>Modificar</a></button></td>
+          <td scope="col"> <button class="btn btn-outline-danger" type="reset"> <a class="dropdown-item" href=""> <i class="bi bi-person-x"></i>Eliminar</a></button></td>
+        </tr>
+    </table>
+</div>
+          </form>
+        </div>
+   
+    
 </main>
 
 <!- Barra de navegación del footer ->
 
-<footer class="footer">
+<footer>
   <nav class="navbar navbar-expand-md fixed-bottom barra dropup"  >
     <div class="container-fluid mx-5 ">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
