@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+   
+    background-color: #faf0e680;
+}
+/*header*/
+.titulo-prophoriz{
+    font-family:'Bebas Neue', sans-serif; 
+    }
+        
+    .titulo-prophoriz:hover{
+    color: #ffff;  
+    }
+    
+    .iconos-header{
+    color: #fff;
+    }  
+    
+    .iconos-header:hover{
+    color: #000;
+    }
+    
+    i{
+    padding: 5px;
+    }
+        
+    .iconos-header-letra{
+    font-family:'Bebas Neue', sans-serif; 
+    }
+    
+    .iconos-header-letra:hover{
+    color: #fff;
+    }
+            
+    .barra{
+    background-color: #6cce7c;
+    }
+/*diseño de fomulario*/
+
+.div-form{
+margin: 80px auto;
+
+}
+
+
+.formulario{
+
+height: auto;
+
+}
+p{
+text-align: center;
+font-family:'Bebas Neue', sans-serif;
+font-size:20px;
+}
+
+
+
+/*fotter*/
+.menu-color-letra{
+    font-family:'Bebas Neue', sans-serif; 
+    }
+    
+    .menu-color-letra:hover{
+    color: #fff;
+    
+    }

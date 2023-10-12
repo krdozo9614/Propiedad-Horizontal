@@ -7,34 +7,35 @@
     <link rel="icon" href="IMG/ICONO CASA.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Inicio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="diseño.css">
-    
+    <link rel="stylesheet" href="modulo propietario.css">
+    <title>PropHoriz</title>
+
+
 </head>
 <body>
 
     <!- barra de navegacion del header ->
 
-<header>
+<header class="header   ">
     <nav class="navbar fixed-top barra navbar-expand-md ">
         <div class="container-fluid mx-5">
-          <a class="navbar-brand titulo-prophoriz" href="/index.html">PropHoriz</a>
+          <a class="navbar-brand titulo-prophoriz" href="">PropHoriz</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto ">
               <li class="nav-item">
-                <a class="nav-link iconos-letra" aria-current="page" href="/index.html"> <i class="iconos-header bi bi-person-circle user"></i> Usuario</a> 
+                <a class="nav-link iconos-header-letra" aria-current="page" href=""> <i class="iconos-header bi bi-person-circle user"></i>Usuario</a> 
               </li>
               <li class="nav-item">
-                <a class="nav-link iconos-letra" href="#"> <i class="iconos-header bi bi-bell"></i>  Notificación</a>
+                <a class="nav-link iconos-header-letra" href="#"> <i class="iconos-header bi bi-bell"></i>  Notificación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link iconos-letra" href="#"> <i class="iconos-header bi bi-question-circle"></i> Ayuda</a>
+                <a class="nav-link iconos-header-letra" href="#"> <i class="iconos-header bi bi-question-circle"></i> Ayuda</a>
               </li>
             </ul>
           </div>
@@ -42,51 +43,42 @@
       </nav>
 </header>
 
-<!- Formulario del propietario ->
+<! Formulario del propietario ->
 
-<main>
- 
-  <div class="row g-3 wrapper div-form col-md-6">
-    <p class="titulo col-md-6"> INGRESAR AL MODULO </p>
-    <div>
-      <a  href="Modulo administracion/modulo administracion.html" class="d-grid col-md-5  mx-auto nav-link " > <button class="btn boton" type="button"> ADMINISTRACIÓN <i class="bi bi-arrow-right iconos"></i></button> </a>
-      
-    </div>
-    <div>
-      <a href="Modulo propietario/modulo propietarios.html" class="d-grid col-md-5  mx-auto nav-link " > <button class="btn boton" type="button"> PROPIETARIO <i class="bi bi-arrow-right iconos"></i></button> </a>
-      
-    </div>
-    <div>
-      <a href="Modulo vigilancia/modulo vigilancia.html" class=" nav-link d-grid col-md-5 mx-auto  " > <button class="btn boton" type="button">VIGILANCIA <i class="bi bi-arrow-right iconos"></i></button> </a>
-      
-    </div>
+<main class="main">
+  <div class="wrapper">
+    <form action="">
+        <h1>PROPIETARIO</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Cedula" required>
+            <i class="bi bi-person-fill"></i>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="N° de apartamento" required>
+            <i class="bi bi-lock-fill"></i>
+        </div>
+        <div class="remember-forgot">
+            <label for=""> <input type="checkbox"> Recordar datos</label>
+            <a href="">Olvidaste tu conrtraseña</a>
+        </div>
+        <button type="submit" class="btn">Ingresar</button>
+        <div class="register-link">
+            <p>No tienes una cuenta?
+            <a href="">Registrarse</a></p>
+        </div>
+    </form>
 
-    <div>
-      <a href="Modulo conserje/modulo conserje.html" class="nav-link d-grid col-md-5 mx-auto " >  <button class="btn boton" type="button">  CONSERJE <i class="bi bi-arrow-right iconos"></i></button> </a>
-      
-    </div>
-   
-</div>
+  </div>
 
 </main>
 
 <!- Barra de navegación del footer ->
 
-<footer>
+<footer class="footer">
   <nav class="navbar navbar-expand-md fixed-bottom barra dropup"  >
-    <div class="container-fluid mx-5">
-      
-    <p> <b ">Diseñador web:</b>  Damian Cardoso 
-        
-    </p>
-    <p> 
-      <b>Contacto:</b> 311 234 56 89
-      
-  </p>
-  <p> 
-    <b>Correo:</b> Cardoso@gmail.com
-</p>
-    </div>
+    <div class="container-fluid mx-5 ">
+      <p>Todos los derechos reservados 2023 D.C</p>
+      </div>
   </nav>
 </footer>
 
