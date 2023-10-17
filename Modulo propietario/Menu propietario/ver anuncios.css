@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* codigo opcionla */
+body{
+   
+    
+}
+
+/*primera imagen*/
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+     max-width: 1000px;
+    
+    
+}
+
+
+.card{
+    overflow: auto;
+    width: 100%;
+    height: 400px;
+    margin: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0,2);
+    cursor: default;
+    transition: all 400ms ease;
+    border: 1px solid;
+    
+    
+    
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0,4);
+    transform: translateY(-5%);
+
+}
+.card img{
+    width: 100%;
+    height: 210px;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+   
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+.card .contenido h3{
+    font-family:'Bebas Neue', sans-serif; 
+    margin-bottom: 15px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: solid 1px #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .contenido a:hover{
+   background-color: #2fb4cc; 
+   color:#fff
+}
+
+/*header*/
+.titulo-prophoriz{
+    font-family:'Bebas Neue', sans-serif; 
+    }
+        
+    .titulo-prophoriz:hover{
+    color: #ffff;  
+    }
+    
+    .iconos-header{
+    color: #fff;
+    }  
+    
+    .iconos-header:hover{
+    color: #000;
+    }
+    
+    i{
+    padding: 5px;
+    }
+        
+    .iconos-header-letra{
+    font-family:'Bebas Neue', sans-serif; 
+    }
+    
+    .iconos-header-letra:hover{
+    color: #fff;
+    }
+            
+    .barra{
+    background-color: #6cce7c;
+    }
+  
+/*footer*/    
+    
+.menu-color-letra{
+    font-family:'Bebas Neue', sans-serif; 
+    }
+    
+    .menu-color-letra:hover{
+    color: #fff;
+    
+    }
+    .titulo-anuncios{
+        margin-top: 100px;
+        font-family:'Bebas Neue', sans-serif; 
+        text-align: center;
+        font-size: 30px;
+    }
+   
+@media screen and (max-width:768px){
+    .container{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        }
+        
+      
+        .card img{
+            width: 100%;
+            height: 280px;
+            
+         
+        } 
+
+    
+}
